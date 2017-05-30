@@ -108,13 +108,12 @@ while(sentry < 29):
         for i in range(0,n):
             ll_param += r[i,k]*mvnorm.logpdf(d[i,],mu_init[k],sigma[k]) #
 
-   # print(ll_param+ll_prior)
- 
     ll.append((ll_param+ll_prior))
 
     sentry += 1
     
-    print(mu_init,'\n')
+    #print(mu_init,'\n')
+    print(ll_param+ll_prior)
     print(sentry,'\n')
 
 
