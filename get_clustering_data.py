@@ -72,9 +72,9 @@ im2[(61-2):(61+2),(109-2):(109+2),] = [1,1,1]
 #plt.imshow(im2)
 #plt.show()
 
-# write patches out to file
-#with open("training_ss_151_blocks_python_labeled_coords.csv",'w') as csvfile:
-#    datawriter = csv.writer(csvfile,delimiter=',')
-#    for each in d:
-#        datawriter.writerow(each)
+# write blocks out to file
+with open("training_ss_151_blocks_python_labeled_coords.csv",'w') as csvfile:
+    datawriter = csv.writer(csvfile,delimiter=',')
+    for each in d:
+        datawriter.writerow(each)
 
